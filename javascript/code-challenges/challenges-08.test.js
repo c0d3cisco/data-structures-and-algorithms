@@ -52,7 +52,8 @@ let characters = [
   }
 ];
 
-const sortByChildren = (charArray) => charArray.sort((a,b) => (a.children.length > b.children.length) ? 1 : ((a.children.length < b.children.length) ? -1 : (a.house > b.house ? 1 : -1)));
+const sortByChildren = (charArray) => charArray.sort((a,b) => (
+  (a.children.length > b.children.length) ? 1 : ((a.children.length < b.children.length) ? -1 : (a.house > b.house ? 1 : -1))));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -80,7 +81,8 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  // Solution code here...
+  let regex = /[0-9]/gi;
+  return regex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -91,7 +93,9 @@ Write a function named containsWorld that takes in a string or number of any len
 ------------------------------------------------------------------------------------------------ */
 
 const containsWorld = (input) => {
-  // Solution code here...
+  let regex = /world/g;
+  console.log(regex);
+  return regex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -103,7 +107,8 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  // Solution code here...
+  let regex = /[A-Z]+\B[a-z]+/g;
+  return str.match(regex) ? str.match(regex) : [];
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -113,7 +118,9 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let regex = /^[A-J]/;
+  let citiesA_J = arr.filter(item => regex.test(item));
+  return citiesA_J;
 };
 
 /* ------------------------------------------------------------------------------------------------
