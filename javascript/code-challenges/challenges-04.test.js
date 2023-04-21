@@ -223,6 +223,7 @@ const meetings = [
 
 const sortMeetingsByDay = (arr) => {
   return arr.sort((a, b) => {
+    console.log(a);
     a = (a.dayOfWeek === 'Monday') ? 1 : ((a.dayOfWeek === 'Tuesday') ? 2 : ((a.dayOfWeek === 'Wednesday') ? 3 : ((a.dayOfWeek === 'Friday') ? 4 : 0)));
     b = (b.dayOfWeek === 'Monday') ? 1 : ((b.dayOfWeek === 'Tuesday') ? 2 : ((b.dayOfWeek === 'Wednesday') ? 3 : ((b.dayOfWeek === 'Friday') ? 4 : 0)));
     return a - b;
