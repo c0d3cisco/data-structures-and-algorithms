@@ -8,13 +8,14 @@ Write a function named returnTen, takes in a string and uses split and splice to
 ------------------------------------------------------------------------------------------------ */
 
 function returnTen(str) {
-  let arrStr = str.split('');
-  let arr = [];
-  for (let idx = ((arrStr.length > 10) ? 10 : arrStr.length); idx > 0; idx--) {
-    arr.push(arrStr[arrStr.length - idx]);
-    // console.log(arr);
-  }
-  return arr;
+  // let arrStr = str.split('');
+  // let arr = [];
+  // for (let idx = ((arrStr.length > 10) ? 10 : arrStr.length); idx > 0; idx--) {
+  //   arr.push(arrStr[arrStr.length - idx]);
+  // console.log(arr);
+  // }
+  return str.split('').splice(-10);
+  // return arr;
 }
 
 /* ------------------------------------------------------------------------------------------------
