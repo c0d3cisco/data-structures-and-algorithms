@@ -1,6 +1,6 @@
 # Code Challenge 1 - Return a reversed array
 
-This code challenge required for a function called *reverseArray* that takes in an array and returns an array in the same order without using any built in methods available in JavaScript.
+This code challenge required for a function called *reverseArray* that takes in an array and returns an array in the reversed order without using any built in methods available in JavaScript.
 
 ## Whiteboard Process
 
