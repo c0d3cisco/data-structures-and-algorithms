@@ -1,7 +1,7 @@
 'use strict';
 
 // Require our linked list implementation
-const LinkedList = require('../index');
+const { LinkedList, zipLists } = require('../index');
 
 describe('Linked List', () => {
   it('works', () => {
