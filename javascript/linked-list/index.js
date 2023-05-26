@@ -8,20 +8,40 @@ class Node {
   }
 }
 
-class LinkedList {
+class SinglyLinkedList {
   //Think of LinkedList supply chain. The List can be equipped with additional methods to execute its purposes.
   constructor(){
     this.head = null; // set to null by default
     this.size = 0;
   }
 
-  // * This are different methods for the Linked list
+  // * These are different methods of the Linked List object.
   // insert first node
   insertFirst(data) {
     // * Below creates the new node by adding the data and assigning the next head with the current head (which is null when inserting the first {100} -> null)
     this.head = new Node(data, this.head);
     this.size++;
   }
+
+  // TODO: insert function
+
+  insertByCisco(data){
+    this.head = new Node(data, this.head);
+  }
+
+  // TODO: includes
+
+  includesInList(data){
+    let current = this.head;
+    while(current){
+      if(current.data === data) return true;
+      current = current.next;
+    }
+    return false;
+  }
+
+  // TODO: to string
+
   // insert last node
   insertLast(data){
     let node = new Node(data);
@@ -57,9 +77,10 @@ class LinkedList {
     }
 
     const node = new Node(data);
+
     let current, previous;
 
-    // set curernt to first
+    // set current to first
     current = this.head;
     let count = 0;
 
@@ -123,18 +144,20 @@ class LinkedList {
   // print list data
   printListData() {
     let current = this.head;
-
-    while(current) {
-      console.log(current.data);
+    const dataList = [];
+    while (current) {
+      dataList.push(`{ ${current.data} }`);
       current = current.next;
     }
+    dataList.push('NULL');
+    return dataList.join(' -> ');
   }
 }
 
 const zipLists = (list1, list2) => {
   let current1 = list1.head;
   let current2 = list2.head;
-  const newList = new LinkedList();
+  const newList = new SinglyLinkedList();
   while (current1 || current2) {
     if (current1) {
       newList.append(current1.value);
@@ -148,4 +171,40 @@ const zipLists = (list1, list2) => {
   return newList;
 };
 
-module.exports = { LinkedList, zipLists };
+// const ll = new SinglyLinkedList();
+// ll.insertFirst(100);
+// ll.insertFirst(200);
+// ll.insertFirst(300);
+// ll.insertLast(400);
+// console.log(ll.includesInList(100));
+// console.log(ll.printListData());
+// ll.insertAt(500, 2);
+
+// ll.removeAt(2);
+// console.log(ll);
+
+// ll.printListData();
+
+// const reverseLinkedList = (inputList) => {
+
+//   const reverseList = new LinkedList();
+
+//   while(inputList.head){
+//     let node = new Node(inputList.value)
+//     reverseList.insertFirst(inputList.value);
+
+//     inputList.current = inputList.current.next;
+
+//   }
+
+//   return reverseList;
+
+// };
+
+
+
+module.exports = {
+  Node,
+  SinglyLinkedList,
+  zipLists,
+};
