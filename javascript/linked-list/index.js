@@ -41,6 +41,79 @@ class SinglyLinkedList {
   }
 
   // TODO: to string
+  // print list data
+  printListData() {
+    let current = this.head;
+    const dataList = [];
+    while (current) {
+      dataList.push(`{ ${current.data} }`);
+      current = current.next;
+    }
+    dataList.push('NULL');
+    return dataList.join(' -> ');
+  }
+
+  // TODO: append
+  append(value){
+    let current = this.head;
+    // console.log(current);
+    if(!current){
+      this.head = new Node(value, null);
+    } else {
+      while(current){
+        if(current.next === null){
+          current.next = new Node(value, null);
+          this.size++;
+          return;
+        }
+        current = current.next;
+      }
+    }
+    this.size++;
+  }
+
+  appendChatGPT(value) {
+    const newNode = new Node(value, null);
+    if (!this.head) {
+      this.head = newNode;
+    } else {
+      let current = this.head;
+      while (current.next) {
+        current = current.next;
+      }
+      current.next = newNode;
+    }
+    this.size++;
+  }
+
+  //TODO: insertAfter
+  insertAfter(targetValue, value){
+    let current = this.head;
+    // console.log(current);
+    while(current){
+      if(current.data === targetValue){
+        current.next = new Node(value, current.next);
+      }
+      current = current.next;
+    }
+  }
+
+  //TODO: insertBefore
+  insertBefore(targetValue, value){
+    let current = this.head;
+    if(this.head.data === targetValue){
+      this.head = new Node(value, this.head);
+      return;
+    }
+    while(current.next){
+      if(current.next.data === targetValue){
+        current.next = new Node(value, current.next);
+        return;
+      }
+      current = current.next;
+    }
+  }
+
 
   // insert last node
   insertLast(data){
@@ -51,6 +124,7 @@ class SinglyLinkedList {
     if(!this.head){
       this.head = node;
     } else {
+
       current = this.head;
 
       while(current.next) {
@@ -141,17 +215,6 @@ class SinglyLinkedList {
     this.head = null;
     this.size = 0;
   }
-  // print list data
-  printListData() {
-    let current = this.head;
-    const dataList = [];
-    while (current) {
-      dataList.push(`{ ${current.data} }`);
-      current = current.next;
-    }
-    dataList.push('NULL');
-    return dataList.join(' -> ');
-  }
 }
 
 const zipLists = (list1, list2) => {
@@ -172,6 +235,12 @@ const zipLists = (list1, list2) => {
 };
 
 // const ll = new SinglyLinkedList();
+// ll.append(2);
+// ll.append(1);
+// ll.insertAfter(3, 1);
+// ll.insertBefore(4, 3);
+// console.log(ll);
+// console.log(ll.printListData());
 // ll.insertFirst(100);
 // ll.insertFirst(200);
 // ll.insertFirst(300);

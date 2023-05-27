@@ -11,7 +11,7 @@
 
 'use strict';
 
-const { SinglyLinkedList } = require('..');
+const { SinglyLinkedList } = require('../..');
 
 describe('Linked List', () => {
   test('Instantiate an empty linked list', () => {

@@ -1,12 +1,12 @@
 # Linked List Implementation
 
-The goal of this challenge is to
+The goal of this challenge is to understand the basics of a linked list.
 
 ## Whiteboard Process
 
 This image is taken from the whiteboard session from Ryan Gallaway's lesson over linked list
 
-![LinkedList Whiteboard](../../assets/linkedListWhiteboard.png)
+![LinkedList Whiteboard](../../../assets/linkedListWhiteboard.png)
 
 ## Approach & Efficiency
 
@@ -20,4 +20,4 @@ Navigate to the JavaScript folder and run `npm test linked-list.test.js`
 
 [Linked List Construct](/javascript/linked-list/index.js)
 
-[linked-list.test.js](/javascript/linked-list/__tests__/linked-list.test.js)
+[linked-list.test.js](./__tests__/linked-list.test.js)
