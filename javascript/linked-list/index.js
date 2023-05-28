@@ -8,7 +8,7 @@ class Node {
   }
 }
 
-class LinkedList {
+class SinglyLinkedList {
   //Think of LinkedList supply chain. The List can be equipped with additional methods to execute its purposes.
   constructor(){
     this.head = null; // set to null by default
@@ -22,7 +22,6 @@ class LinkedList {
     this.head = new Node(data, this.head);
     this.size++;
   }
-<<<<<<< HEAD
 
   // TODO: insert function
 
@@ -116,8 +115,6 @@ class LinkedList {
   }
 
 
-=======
->>>>>>> main
   // insert last node
   insertLast(data){
     let node = new Node(data);
@@ -217,24 +214,12 @@ class LinkedList {
     this.head = null;
     this.size = 0;
   }
-<<<<<<< HEAD
-=======
-  // print list data
-  printListData() {
-    let current = this.head;
-
-    while(current) {
-      console.log(current.data);
-      current = current.next;
-    }
-  }
->>>>>>> main
 }
 
 const zipLists = (list1, list2) => {
   let current1 = list1.head;
   let current2 = list2.head;
-  const newList = new LinkedList();
+  const newList = new SinglyLinkedList();
   while (current1 || current2) {
     if (current1) {
       newList.append(current1.value);
@@ -248,7 +233,6 @@ const zipLists = (list1, list2) => {
   return newList;
 };
 
-<<<<<<< HEAD
 // const ll = new SinglyLinkedList();
 // ll.append(2);
 // ll.append(1);
@@ -292,6 +276,3 @@ module.exports = {
   SinglyLinkedList,
   zipLists,
 };
-=======
-module.exports = { LinkedList, zipLists };
->>>>>>> main
