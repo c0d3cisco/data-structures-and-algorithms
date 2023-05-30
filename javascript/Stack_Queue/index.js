@@ -18,11 +18,12 @@
 class Stack {
   constructor(){
     this.top = null;
-    this.size = 0;
+    // this.size = 0;
   }
 
   push(value){
     this.top = new Node(value, this.top);
+    // this.size++;
   }
 
   pop(){
@@ -32,12 +33,12 @@ class Stack {
 
     removedItem = this.top.value;
     this.top = this.top.next;
-
+    // this.size--;
     return removedItem;
   }
 
   peek(){
-    return this.top.value;
+    return this.top?.value ?  this.top.value : null;
   }
 
   isEmpty(){
@@ -60,30 +61,26 @@ class Queue {
     this.back = null;
   }
 
-  enqueue2(value){
+  enqueue(value) {
+      let newNode = new Node(value);
+      // console.log('newNode >>> ', newNode);
 
-    if(this.front){
-      this.back.next = value;
-    } else {
-      this.front = value;
+      if (!this.front) {
+        this.front = newNode;
+        this.back = newNode;
+      } else {
+        // console.log('newNode >>> ', newNode);
+        // console.log('this.back >>> ', this.back);
+        this.back.next = newNode;
+        // console.log('this.back.next = newNode >>> ', this.back);
+        this.back = newNode;
+        // console.log('this.back = newNode >>> ', this.front);
+        // console.log('this.back >>> ', this.back);
+        // console.log('this.front >>> ', this.front);
+
+      }
     }
 
-    this.back = value;
-
-    // we move the back pointer to the new node
-  }
-
-  // enqueue(value){
-  //   let newNode = new Node2(value);
-  //   if(this.front){
-  //     this.back.next = new Node(value, this.back);
-  //   }
-
-  //   // we move the back pointer to the new node
-  //   this.back = new Node();
-
-  //   this.front ? this.back.next = new Node(value, this.front)
-  // }
 
   dequeue(){
     let removedItem = null;
@@ -93,7 +90,6 @@ class Queue {
       if (this.front === this.back){
         this.back = null;
       }
-
       // works if list if empty or populated, will either be null, or "next in line"
       this.front = this.front.next;
     }
@@ -101,12 +97,40 @@ class Queue {
   }
 
   peek(){
-    return this.top.value;
+    return this.front?.value ? this.front.value : null;
   }
 
   isEmpty(){
-    return this.top ? true : false;
+    return this.front?.value ? true : false;
   }
 }
 
-module.exports = { Node, Stack, Queue };
+class PseudoQueue {
+  constructor() {
+    this.s1 = new Stack();
+    this.s2 = new Stack();
+  }
+
+  enqueue(value) {
+    while (this.s1.top) {
+      this.s2.push(this.s1.pop());
+    }
+    this.s1.push(value);
+    while (this.s2.top) {
+      this.s1.push(this.s2.pop());
+    }
+  }
+
+  dequeue() {
+    console.log(this.s1);
+    if (!this.s1.top) {
+      return "Queue is empty";
+    }
+    return this.s1.pop();
+  }
+}
+
+
+
+
+module.exports = { Node, Stack, Queue, PseudoQueue };
