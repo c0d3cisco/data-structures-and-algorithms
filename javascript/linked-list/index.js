@@ -114,6 +114,22 @@ class SinglyLinkedList {
     }
   }
 
+  //TODO: kthFromEnd
+  kthFromEnd(k){
+    if(!this.head || k < 0) return null;
+    let current = this.head;
+    let kthNode = this.head;
+    for(let i = 0; i < k; i++){
+      if(!kthNode.next) return null;
+      kthNode = kthNode.next;
+    }
+    while(kthNode.next){
+      kthNode = kthNode.next;
+      current = current.next;
+    }
+    return current.data;
+  }
+
 
   // insert last node
   insertLast(data){
@@ -233,17 +249,19 @@ const zipLists = (list1, list2) => {
   return newList;
 };
 
+
+
 // const ll = new SinglyLinkedList();
+// ll.append(7);
+// ll.append(6);
+// ll.append(5);
+// ll.append(4);
+// ll.append(3);
 // ll.append(2);
 // ll.append(1);
-// ll.insertAfter(3, 1);
-// ll.insertBefore(4, 3);
-// console.log(ll);
 // console.log(ll.printListData());
-// ll.insertFirst(100);
-// ll.insertFirst(200);
-// ll.insertFirst(300);
-// ll.insertLast(400);
+// console.log(ll.kthFromEnd(2));
+
 // console.log(ll.includesInList(100));
 // console.log(ll.printListData());
 // ll.insertAt(500, 2);
