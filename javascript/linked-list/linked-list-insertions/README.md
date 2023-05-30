@@ -4,8 +4,6 @@ The goal of this challenge is to write three methods for a linked list that can 
 
 ## Whiteboard Process
 
-
-
 ![LinkedList Whiteboard](../../../assets/linkedlist_insert_challenge06.png)
 
 ## Approach & Efficiency
@@ -20,7 +18,7 @@ BigO Space - O(1) since the size of the input and output does not change.
 Modification to the code after testing was needed.\
 git clone this repository into a desired location.\
 Inside the repository, run `npm install`.\
-Navigate to the JavaScript folder and run `npm test linked-list.test.js`
+Navigate to the JavaScript folder and run `npm test linked-list-insertions.test.js`
 
 [Linked List Construct](/javascript/linked-list/index.js)
 

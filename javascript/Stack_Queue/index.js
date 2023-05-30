@@ -1,12 +1,12 @@
-'use strict';
+// 'use strict';
 
-class Node2 {
-// * Example of a linear queue
-  constructor(value){
-    this.value = value;
-    this.next = null;
-  }
-}
+// class Node2 {
+// // * Example of a linear queue
+//   constructor(value){
+//     this.value = value;
+//     this.next = null;
+//   }
+// }
 
 // push2(value){
 //   let newNode2 = new Node2(value);
@@ -63,12 +63,12 @@ class Queue {
   enqueue2(value){
 
     if(this.front){
-      this.back.next = newNode;
+      this.back.next = value;
     } else {
-      this.front = newNode;
+      this.front = value;
     }
 
-    this.back = newNode;
+    this.back = value;
 
     // we move the back pointer to the new node
   }
