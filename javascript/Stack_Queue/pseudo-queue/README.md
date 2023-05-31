@@ -1,5 +1,7 @@
 # Stack and Queue - Pseudo-Queue
 
+Collaboration with Michael Steoger.
+
 The goal of this challenge is to implement a Queue using two Stacks. Create a new class called pseudo queue. Do not use an existing Queue. Instead, this PseudoQueue class will  utilize 2 Stack instances to create and manage the queue
 
 ## Whiteboard Process
