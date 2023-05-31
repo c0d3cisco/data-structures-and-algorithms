@@ -12,7 +12,7 @@ class SinglyLinkedList {
   //Think of LinkedList supply chain. The List can be equipped with additional methods to execute its purposes.
   constructor(){
     this.head = null; // set to null by default
-    this.size = 0;
+    // this.size = 0;
   }
 
   // * This are different methods for the Linked list
@@ -20,7 +20,7 @@ class SinglyLinkedList {
   insertFirst(data) {
     // * Below creates the new node by adding the data and assigning the next head with the current head (which is null when inserting the first {100} -> null)
     this.head = new Node(data, this.head);
-    this.size++;
+    // this.size++;
   }
 
   // TODO: insert function
@@ -63,13 +63,13 @@ class SinglyLinkedList {
       while(current){
         if(current.next === null){
           current.next = new Node(value, null);
-          this.size++;
+          // this.size++;
           return;
         }
         current = current.next;
       }
     }
-    this.size++;
+    // this.size++;
   }
 
   appendChatGPT(value) {
@@ -83,7 +83,7 @@ class SinglyLinkedList {
       }
       current.next = newNode;
     }
-    this.size++;
+    // this.size++;
   }
 
   //TODO: insertAfter
@@ -150,13 +150,13 @@ class SinglyLinkedList {
       current.next = node;
     }
 
-    this.size++;
+    // this.size++;
   }
   // insert at index
   insertAt(data, index){
 
     // If index is out of range
-    if(index > 0 && index > this.size){
+    if(index > 0 ){ //&& index > this.size){
       return;
     }
 
@@ -182,7 +182,7 @@ class SinglyLinkedList {
     node.next = current;
     previous.next = node;
 
-    this.size++;
+    // this.size++;
 
   }
   // get at index
@@ -202,7 +202,7 @@ class SinglyLinkedList {
   }
   // remove at index
   removeAt(index){
-    if( index> 0 && index > this.size) {
+    if( index> 0 ){ //} && index > this.size) {
       return;
     }
 
@@ -223,12 +223,12 @@ class SinglyLinkedList {
       previous.next = current.next;
     }
 
-    this.size--;
+    // this.size--;
   }
   // clear list
   clearList() {
     this.head = null;
-    this.size = 0;
+    // this.size = 0;
   }
 }
 
@@ -238,12 +238,17 @@ const zipLists = (list1, list2) => {
   const newList = new SinglyLinkedList();
   while (current1 || current2) {
     if (current1) {
-      newList.append(current1.value);
+      newList.append(current1.data);
       current1 = current1.next;
     }
     if (current2) {
-      newList.append(current2.value);
+      console.log(current2.data);
+      newList.append(current2.data);
       current2 = current2.next;
+      console.log('current2 >>> ', current2);
+
+      console.log('newList >>> ', newList);
+
     }
   }
   return newList;
