@@ -64,7 +64,6 @@ class Queue {
   enqueue(value) {
       let newNode = new Node(value);
       // console.log('newNode >>> ', newNode);
-
       if (!this.front) {
         this.front = newNode;
         this.back = newNode;
@@ -77,7 +76,6 @@ class Queue {
         // console.log('this.back = newNode >>> ', this.front);
         // console.log('this.back >>> ', this.back);
         // console.log('this.front >>> ', this.front);
-
       }
     }
 
