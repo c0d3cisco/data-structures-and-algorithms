@@ -26,3 +26,6 @@ To run your tests
 [Linked List](/javascript/linked-list/linked-list/README.md)\
 [Linked List Insertion](/javascript/linked-list/linked-list-insertions/README.md)\
 [Linked List Kth Insertion](/javascript/linked-list/linked-list-kth/README.md)
+[Stack-queue](/javascript/stack_Queue/stack-queue_implementation/README.md)
+[PseudoQueue](/javascript/stack_Queue/pseudo-queue/README.md)
+[Animal Shelter Queue](/javascript/stack_Queue/animal-shelter-queue/README.md)
