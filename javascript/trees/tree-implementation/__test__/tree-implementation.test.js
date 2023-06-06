@@ -56,6 +56,19 @@ describe('Tree', () => {
     expect(results).toEqual([1, 8, 5, 17, 15, 10]);
   });
 
+  test('findMax', () => {
+    let tree = new Tree();
+    tree.root = new Node(12);
+    tree.root.left = new Node(59);
+    tree.root.right = new Node(-15);
+    tree.root.left.left = new Node(3);
+    tree.root.left.right = new Node(2);
+    tree.root.right.right = new Node(17);
+
+    const results = tree.findMax();
+    expect(results).toEqual(59);
+  });
+
   test('addValue', () => {
     let tree = new Tree();
     tree.root = new Node(10);

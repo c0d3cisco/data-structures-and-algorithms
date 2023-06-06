@@ -100,26 +100,56 @@ class Tree {
     traverse(this.root);
     return results;
   }
+
+  findMax(){
+    let currentMax = 0;
+    let node = this.root;
+    const traverse = (node) => {
+      if(node === null) {
+        return currentMax = null;
+      }
+      // console.log(node.value);
+      if (currentMax < node.value) {
+        currentMax = node.value;
+      }
+      if(node.left !== null) {
+        traverse(node.left);
+      }
+      if(node.right !== null) {
+        traverse(node.right);
+      }
+    };
+    traverse(node);
+    return currentMax;
+  }
+
+
 }
 
 module.exports = { Tree, Node };
 
-let tree = new Tree();
-tree.root = new Node(10);
-tree.root.left = new Node(5);
-tree.root.right = new Node(15);
-tree.root.left.left = new Node(1);
-tree.root.left.right = new Node(8);
-tree.root.right.right = new Node(17);
+// let tree = new Tree();
+// tree.root = new Node(10);
+// tree.root.left = new Node(5);
+// tree.root.right = new Node(15);
+// tree.root.left.left = new Node(1);
+// tree.root.left.right = new Node(8);
+// tree.root.right.right = new Node(17);
+// tree.root = new Node(12);
+// tree.root.left = new Node(59);
+// tree.root.right = new Node(-15);
+// tree.root.left.left = new Node(3);
+// tree.root.left.right = new Node(2);
+// tree.root.right.right = new Node(17);
 
-console.log('-------preOrder-------');
-let results = tree.preOrder();
-console.log('preOrder results:', results);
-console.log('-------inOrder-------');
-results = tree.inOrder();
-console.log('inOrder results:', results);
-console.log('-------postOrder-------');
-results = tree.postOrder();
-console.log('postOrder results:', results);
-
+// console.log('-------preOrder-------');
+// let results = tree.preOrder();
+// console.log('preOrder results:', results);
+// console.log('-------inOrder-------');
+// results = tree.inOrder();
+// console.log('inOrder results:', results);
+// console.log('-------postOrder-------');
+// results = tree.postOrder();
+// console.log('postOrder results:', results);
+// console.log('max value', tree.findMax());
 
