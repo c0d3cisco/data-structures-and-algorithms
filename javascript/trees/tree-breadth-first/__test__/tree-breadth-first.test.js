@@ -24,5 +24,24 @@ describe('Tree', () => {
     const results = breadthFirst(tree);
     expect(results).toEqual([]);
   });
+
+  test('breadthFirst tree with one node', () => {
+    let tree = new Tree();
+    tree.root = new Node(12);
+    const results = breadthFirst(tree);
+    expect(results).toEqual([12]);
+  });
+
+  test('breadthFirst tree with infinity', () => {
+    let tree = new Tree();
+    tree.root = new Node(1);
+    tree.root.left = new Node(3);
+    tree.root.right = new Node(4);
+    tree.root.left.left = new Node(Infinity);
+    tree.root.left.right = new Node(5);
+    tree.root.right.right = new Node(8);
+    const results = breadthFirst(tree);
+    expect(results).toEqual([1, 3, 4, Infinity, 5, 8]);
+  });
 });
 
