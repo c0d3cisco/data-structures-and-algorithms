@@ -122,8 +122,6 @@ class Tree {
     traverse(node);
     return currentMax;
   }
-
-
 }
 
 module.exports = { Tree, Node };
