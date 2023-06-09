@@ -124,7 +124,20 @@ class Tree {
   }
 }
 
-module.exports = { Tree, Node };
+class KaryNode {
+  constructor(value){
+    this.value = value;
+    this.child = [];
+  }
+}
+
+class KaryTree {
+  constructor(){
+    this.root = null;
+  }
+}
+
+module.exports = { KaryNode, KaryTree, Tree, Node };
 
 // let tree = new Tree();
 // tree.root = new Node(10);
