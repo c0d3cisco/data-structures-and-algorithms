@@ -4,6 +4,10 @@
 
 The goal of this challenge was to write a function called fizz buzz tree that takes in a k-ary tree and returns a new k-ary. The new tree will instead have “Fizz” if the value of the original tree is divisible by 3, “Buzz” if divisible by 5, “FizzBuzz” if divisible by both 3 and 5,  or return number in string if not divisible by 3 or 5.
 
+## Collaboration
+
+For this code challenge, I collaborated with Justin Mathieu.
+
 ## Whiteboard Process
 
 ![Tree Whiteboard](../../../assets/UML_Challenge18.png)
