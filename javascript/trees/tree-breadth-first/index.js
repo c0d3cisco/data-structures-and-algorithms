@@ -1,6 +1,6 @@
 'use strict';
 
-// const { Tree, Node } = require('../index.js');
+const { Tree, Node } = require('../index.js');
 const { Queue } = require('../../stack_Queue/index.js');
 
 // let tree = new Tree();

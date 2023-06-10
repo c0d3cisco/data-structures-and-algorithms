@@ -32,3 +32,4 @@ To run your tests
 [Tree Implementation](/javascript/trees/tree-implementation/README.md)
 [Max Tree Search](/javascript/trees/tree-max/README.md)
 [Tree Breadth First](/javascript/trees/tree-breadth-first/README.md)
+[Tree Fizz Buzz Function](/javascript/trees/tree-fizz-buzz/README.md)
