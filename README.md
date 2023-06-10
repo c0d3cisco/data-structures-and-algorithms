@@ -29,6 +29,7 @@ To run your tests
 [Stack-queue](/javascript/Stack_Queue/stack-queue_implementation/README.md)\
 [PseudoQueue](/javascript/Stack_Queue/pseudo-queue/README.md)\
 [Animal Shelter Queue](/javascript/Stack_Queue/animal-shelter-queue/README.md)
+[Stack Queue Brackets](/javascript/Stack_Queue/stack-queue-brackets/README.md)
 [Tree Implementation](/javascript/trees/tree-implementation/README.md)
 [Max Tree Search](/javascript/trees/tree-max/README.md)
 [Tree Breadth First](/javascript/trees/tree-breadth-first/README.md)
