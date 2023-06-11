@@ -16,10 +16,12 @@ function validateBrackets(input){
     } else if (input[i] === ')' || input[i] === ']' || input[i] === '}'){
       if(input[i] === brackets[stack.peek()]){
         stack.pop();
+      } else {
+        return false;
       }
     }
   }
-  return stack.peek() ? false : true;
+  return true;
 }
 
 module.exports = { validateBrackets };

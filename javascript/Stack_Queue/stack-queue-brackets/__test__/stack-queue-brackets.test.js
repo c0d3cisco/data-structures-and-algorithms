@@ -31,6 +31,7 @@ describe('validateBrackets', () => {
     expect(validateBrackets('[({}]')).toBeFalsy();
     expect(validateBrackets('(](')).toBeFalsy();
     expect(validateBrackets('{(})')).toBeFalsy();
+    expect(validateBrackets('}{(})')).toBeFalsy();
   });
 
   test(' test empty string returns true', () => {
