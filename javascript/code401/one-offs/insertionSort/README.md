@@ -26,7 +26,7 @@ InsertionSort(int[] input)
 
 ## Whiteboard Process
 
-![insertionSort](../.../../../../assets/insertionSort_codeChallenge26.png)
+![insertionSort](../../../../assets/insertionSort_codeChallenge26.png)
 
 ## Approach & Efficiency
 

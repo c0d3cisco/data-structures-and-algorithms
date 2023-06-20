@@ -6,7 +6,7 @@ The goal of this challenge was to find the maximum value of a binary tree using 
 
 ## Whiteboard Process
 
-![Tree Whiteboard](../../../assets/UML_Challenge16.png)
+![Tree Whiteboard](../../../../assets/UML_Challenge16.png)
 
 ## Approach & Efficiency
 

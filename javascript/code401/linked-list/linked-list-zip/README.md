@@ -15,7 +15,7 @@ Write tests for:
 
 ## Whiteboard Process
 
-![LinkedList-zip Whiteboard](../../../assets/linked-list-zip_challenge08.png)
+![LinkedList-zip Whiteboard](../../../../assets/linked-list-zip_challenge08.png)
 
 ## Approach & Efficiency
 

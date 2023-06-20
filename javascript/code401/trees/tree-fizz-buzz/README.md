@@ -10,7 +10,7 @@ For this code challenge, I collaborated with Justin Mathieu.
 
 ## Whiteboard Process
 
-![Tree Whiteboard](../../../assets/UML_Challenge18.png)
+![Tree Whiteboard](../../../../assets/UML_Challenge18.png)
 
 ## Approach & Efficiency
 

@@ -20,7 +20,7 @@ Create a class called AnimalShelter which holds only dogs and cats. The shelter 
 
 ## Whiteboard Process
 
-![LinkedList Whiteboard](../.../../../../assets/challenge12whiteboard.png)
+![LinkedList Whiteboard](../../../../assets/challenge12whiteboard.png)
 
 ## Approach & Efficiency
 

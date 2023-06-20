@@ -6,7 +6,7 @@ The goal of this challenge is to implement a Queue using two Stacks. Create a ne
 
 ## Whiteboard Process
 
-![LinkedList Whiteboard](../.../../../../assets/pseudo-queue_challenge11.png)
+![LinkedList Whiteboard](../../../../assets/pseudo-queue_challenge11.png)
 
 ## Approach & Efficiency
 

@@ -6,7 +6,7 @@ The goal of this challenge was to understand the basics of a stack and queue, a 
 
 This image is taken from the whiteboard session from Ryan Gallaway's lesson over stack and queue.
 
-![LinkedList Whiteboard](../../../assets/stacknqueueWhiteboard.png)
+![LinkedList Whiteboard](../../../../assets/stacknqueueWhiteboard.png)
 
 ## Approach & Efficiency
 

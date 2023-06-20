@@ -4,7 +4,7 @@ The goal of this challenge is to write three methods for a linked list that can 
 
 ## Whiteboard Process
 
-![LinkedList Whiteboard](../../../assets/linkedlist_insert_challenge06.png)
+![LinkedList Whiteboard](../../../../assets/linkedlist_insert_challenge06.png)
 
 ## Approach & Efficiency
 
