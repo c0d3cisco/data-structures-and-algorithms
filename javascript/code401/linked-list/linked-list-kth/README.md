@@ -12,7 +12,7 @@ Write tests for:
 
 ## Whiteboard Process
 
-![LinkedList Whiteboard](../../../assets/linked-list-kth_challenge07.png)
+![LinkedList Whiteboard](../../../../assets/linked-list-kth_challenge07.png)
 
 ## Approach & Efficiency
 

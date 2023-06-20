@@ -6,7 +6,7 @@ The goal of this challenge was to obtain the values of a binary tree in a breadt
 
 ## Whiteboard Process
 
-![Tree Whiteboard](../../../assets/UML_Challenge17.png)
+![Tree Whiteboard](../../../../assets/UML_Challenge17.png)
 
 ## Approach & Efficiency
 

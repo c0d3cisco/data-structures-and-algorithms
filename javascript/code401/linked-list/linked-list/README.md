@@ -6,7 +6,7 @@ The goal of this challenge is to understand the basics of a linked list.
 
 This image is taken from the whiteboard session from Ryan Gallaway's lesson over linked list
 
-![LinkedList Whiteboard](../../../assets/linkedListWhiteboard.png)
+![LinkedList Whiteboard](../../../../assets/linkedListWhiteboard.png)
 
 ## Approach & Efficiency
 

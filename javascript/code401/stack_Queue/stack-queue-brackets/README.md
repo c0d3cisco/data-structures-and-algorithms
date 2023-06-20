@@ -4,7 +4,7 @@ The goal of this challenge was to create a function that takes in a string and r
 
 ## Whiteboard Process
 
-![LinkedList Whiteboard](../../../assets/whiteboard_challenge13.png)
+![LinkedList Whiteboard](../../../../assets/whiteboard_challenge13.png)
 
 ## Approach & Efficiency
 
