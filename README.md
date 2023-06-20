@@ -24,7 +24,7 @@ To run your tests
 [Array Insert Shift](/javascript/code401/array-insert-shift/README.md)\
 [Binary Search](/javascript/code401/array-binary-search/README.md)\
 [Linked List](/javascript/code401/linked-list/linked-list/README.md)\
-[Linked List Insertion](/javascript/linked-list/linked-list-insertions/README.md)\
+[Linked List Insertion](/javascript/code401/linked-list/linked-list-insertions/README.md)\
 [Linked List Kth Insertion](/javascript/code401/linked-list/linked-list-kth/README.md)\
 [Stack-queue](/javascript/Stack_Queue/code401/stack-queue_implementation/README.md)\
 [PseudoQueue](/javascript/Stack_Queue/code401/pseudo-queue/README.md)\
