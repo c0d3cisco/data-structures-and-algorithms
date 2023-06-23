@@ -37,6 +37,6 @@ BigO Space - O(1) since the size of the input and output does not change.
 
 git clone this repository into a desired location.\
 Inside the repository, run `npm install`.\
-Navigate to the JavaScript folder and run `npm test animal-shelter-queue.test.js`
+Navigate to the JavaScript folder and run `npm test insertionSort.test.test.js`
 
 [insertionSort.test.test.js](./insertionSort.test.js)
