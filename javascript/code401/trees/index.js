@@ -23,6 +23,7 @@ class Tree {
       results.push(node.value);
       if(node.left) {
         traverse(node.left);
+        node.left += 2;
       }
       if(node.right){
         traverse(node.right);
