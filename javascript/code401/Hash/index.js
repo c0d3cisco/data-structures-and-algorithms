@@ -1,8 +1,5 @@
 'use strict';
 
-// const LinkedList = require('./LinkedList');
-
-
 class HashTable {
   constructor(size) {
     this.size = size;
@@ -47,22 +44,4 @@ class HashTable {
   }
 }
 
-
-const table = new HashTable(1024);
-
-console.log('table:', table);
-
-let hashOne = table.hash('Ryan');
-let hashTwo = table.hash('Kati');
-console.log('hashOne:', hashOne);
-console.log('hashTwo:', hashTwo);
-
-table.set('Ryan', 'this is my value');
-table.set('Kati', 'how do we define value');
-
-console.log('updated table:', table);
-console.log('get works!', table.get('Ryan'));
-console.log('has worked:', table.has('Ryan')); // expect true
-console.log('has worked:', table.has('Lucky')); // expect false
-let keys = table.keys();
-console.log('keys:', keys);
+module.exports = HashTable;
