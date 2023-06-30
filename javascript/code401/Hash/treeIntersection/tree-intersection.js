@@ -47,12 +47,8 @@ function treeIntersection(treeOne, treeTwo){
   treeTraversal(treeOne, firstHashMap);
   treeTraversal(treeTwo, secondHashMap);
 
-  // console.log(firstHashMap);
-  // console.log(secondHashMap);
 
   let firstHashKeys = firstHashMap.keys();
-  // console.log(firstHashKeys);
-
   for (let i = 0; i < firstHashKeys.length; i++) {
     if (secondHashMap.has(firstHashKeys[i])) {
       results.push(firstHashKeys[i]);
@@ -63,5 +59,5 @@ function treeIntersection(treeOne, treeTwo){
 
 console.log(treeIntersection(tree1, tree2));
 
-// module.exports = treeIntersection;
+module.exports = treeIntersection;
 

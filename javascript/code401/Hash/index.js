@@ -21,6 +21,7 @@ class HashTable {
   set(key, value) {
     let position = this.hash(key);
     let data = { [key]: value };
+    // console.log(data);
     this.buckets[position] = data;
   }
 
