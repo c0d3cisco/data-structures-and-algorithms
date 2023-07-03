@@ -54,14 +54,3 @@ describe('Hash Table', () => {
   }
   );
 });
-
-
-function reverseLinked(list){
-  let newList = new LinkedList();
-  let current = list.head;
-  while(current){
-
-    current = current.next;
-  }
-  return newList;
-}

@@ -34,11 +34,15 @@ function treeIntersection(treeOne, treeTwo){
   const secondHashMap = new HashTable(1024);
   let results = [];
 
+  if(!treeOne.root || !treeTwo.root){
+    return results;
+  }
+
   function treeTraversal(tree, hashMap) {
     let current = tree.root;
     function traverse(node) {
       if (node.left) traverse(node.left);
-      console.log(node.value);
+      // console.log(node.value);
       hashMap.set(node.value, node.value);
       if (node.right) traverse(node.right);
     }
@@ -54,10 +58,34 @@ function treeIntersection(treeOne, treeTwo){
       results.push(firstHashKeys[i]);
     }
   }
+  console.log(results);
   return results;
 }
 
-console.log(treeIntersection(tree1, tree2));
+// set up tests that test the function treeIntersection above
+// include test for empty trees, trees with no matching values, trees with matching values, and trees with multiple matching values, and an empty tree, and a tree with no matching values
 
-module.exports = treeIntersection;
+describe('Tree Intersection', () => {
+  test('Should return an array of matching values', () => {
+    const expected = [
+      '200', '350',
+      '100', '250',
+      '175', '150',
+      '500'
+    ];
+    expect(treeIntersection(tree1, tree2)).toEqual(expected);
+  }
+  );
+  test('Should return an empty array if the first tree is empty', () => {
+    const expected = [];
+    expect(treeIntersection(new Tree(), tree2)).toEqual(expected);
+  }
+  );
+  test('Should return an empty array if the second tree is empty', () => {
+    const expected = [];
+    expect(treeIntersection(tree1, new Tree())).toEqual(expected);
+  });
+});
+
+
 
