@@ -35,4 +35,5 @@ To run your tests
 [Tree Breadth First](/javascript/code401/trees/tree-breadth-first/README.md)\
 [Tree Fizz Buzz Function](/javascript/code401/trees/tree-fizz-buzz/README.md)\
 [Insertion Sort](/javascript/code401/one-offs/insertionSort/README.md)\
-[Hash Implementation](/javascript/code401/Hash/implementation/README.md)
+[Hash Implementation](/javascript/code401/hash/implementation/README.md)\
+[Hash - Tree Intersection](/javascript/code401/hash/treeIntersection/README.md)\
