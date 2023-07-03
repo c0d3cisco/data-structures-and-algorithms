@@ -37,3 +37,4 @@ To run your tests
 [Insertion Sort](/javascript/code401/one-offs/insertionSort/README.md)\
 [Hash Implementation](/javascript/code401/hash/implementation/README.md)\
 [Hash - Tree Intersection](/javascript/code401/hash/treeIntersection/README.md)\
+[Hash - Tree Intersection](/javascript/code401/hash/hashmap-left-join/README.md)
