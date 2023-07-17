@@ -34,7 +34,8 @@ To run your tests
 [Max Tree Search](/javascript/code401/trees/tree-max/README.md)\
 [Tree Breadth First](/javascript/code401/trees/tree-breadth-first/README.md)\
 [Tree Fizz Buzz Function](/javascript/code401/trees/tree-fizz-buzz/README.md)\
-[Insertion Sort](/javascript/code401/one-offs/insertionSort/README.md)\
+[Insertion Sort](/javascript/code401/insertionSort/README.md)\
 [Hash Implementation](/javascript/code401/hash/implementation/README.md)\
 [Hash - Tree Intersection](/javascript/code401/hash/treeIntersection/README.md)\
-[Hash - Tree Intersection](/javascript/code401/hash/hashmap-left-join/README.md)
+[Hash - Left-join](/javascript/code401/hash/hashmap-left-join/README.md)\
+[String Manipulation - TypeScript]()
